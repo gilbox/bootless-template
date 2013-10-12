@@ -1,3 +1,12 @@
+bootless-template
+=================
+
+My LESS-based HTML5 template with some optional bootstrap stuff included.
+
+
+Overview
+========
+
 Bootstrap is commented out at the bottom of the index.html or index.php:
 
 ```
