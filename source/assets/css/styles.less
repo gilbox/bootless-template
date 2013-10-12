@@ -1,0 +1,44 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Reset
+@import "bootstrap/normalize";
+//@import "bootstrap/print.less";
+
+
+// Core CSS
+@import "bootstrap/scaffolding";
+@import "bootstrap/type";
+//@import "bootstrap/code.less";
+//@import "bootstrap/grid.less";
+//@import "bootstrap/tables.less";
+//@import "bootstrap/forms.less";
+//@import "bootstrap/buttons.less";
+
+@import "semantic.gs/grid";
+@import "semantic.gs/grid-fluid";
+
+@import "lesshat/lesshat";
+
+// bootstrap
+@brand-primary: #060606;
+@border-radius-base:             1px;
+@border-radius-large:            1px;
+@border-radius-small:            1px;
+
+// my mixins
+.border-box() {
+	.box-sizing(border-box)
+}
+
+body {
+	//padding-top: 60px;	// uncomment to use bootstrap navbar
+}
+.container {
+	display:block;
+}
+
+
+
+
+

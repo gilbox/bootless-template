@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+	# requires mod_setenvif
+	SetEnvIf Host .*local.* APPLICATION_ENV=development
+	SetEnvIf Host .*\.com* APPLICATION_ENV=production
+
+	RewriteEngine On
+
+	# Removes index.php from URLs
+	RewriteCond $1 !\.(gif|jpe?g|png)$ [NC]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
