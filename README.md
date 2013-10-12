@@ -3,9 +3,6 @@ bootless-template
 
 My LESS-based HTML5 template with some optional bootstrap stuff included.
 
-If you end up using most of the bootstrap less files, it might be better to load
-pre-compiled bootstrap.css from a CDN and then in styles.less just overwrite variables
-from bootstrap/variables.less. Then, just use boostrap/mixins.less as needed.
 
 styles.less
 ===========
@@ -49,6 +46,10 @@ All site styles get imported in styles.less. Here are the default includes:
 ... only a very minimal amount of Bootstrap gets imported to start with. To use additional Bootstrap features,
 multiple files usually have to be imported because of all the dependencies. The import code above is copy-and-pasted
 from the first half of bootstrap.less and then some lines are commented out.
+
+If you end up importing most of the bootstrap less files, it's probably better to load
+pre-compiled bootstrap.css from a CDN and then in styles.less just overwrite variables
+from bootstrap/variables.less. Then, just use boostrap/mixins.less as needed.
 
 
 semantic.gs
