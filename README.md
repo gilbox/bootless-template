@@ -2,6 +2,40 @@ bootless-template
 =================
 
 My LESS-based HTML5 template with some optional bootstrap stuff included.
+This template is optimized for web development with PHP files or plain HTML.
+
+The idea is that you really only need to use the build script for distribution.
+
+During development, you can use
+`grunt dev`
+to compile the Less files, but I prefer to use my IDE's built-in Less compiler.
+
+
+Build
+=====
+
+Development:
+- grunt dev
+
+Distribution:
+- grunt dist
+
+
+Compiling JavaScript Files Automatically
+========================================
+
+During development, add as many javascript files as you'd like as script references from your html.
+Don't worry about concatenation nor minification. But, surround them with build/endbuild comments like so:
+
+```
+<!-- build:js assets/js/vendor/bootstrap.min.js -->
+<script src="assets/js/vendor/bootstrap/alert.js"></script>
+<script src="assets/js/vendor/bootstrap/button.js"></script>
+<!-- endbuild -->
+```
+
+When you build for distribution all of the js files will be compressed into one, and the script tags
+will be replaced with a single script tag.
 
 
 styles.less

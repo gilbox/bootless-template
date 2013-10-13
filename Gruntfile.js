@@ -19,8 +19,7 @@ module.exports = function(grunt) {
       options: {
         force: true
 	  },
-      dist: ['dist'],
-	  dev: ['source/assets/js/vendor/bootstrap/bootstrap.js']
+      dist: ['dist']
     },
 
 //    jshint: {
@@ -189,7 +188,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('dist', ['clean:dist', 'less:dist', 'copy:dist', 'useminPrepare', 'concat', 'uglify', 'usemin']);
 
-  grunt.registerTask('dev', ['clean:dev', 'less:dev']);
+  grunt.registerTask('dev', ['less:dev']);
 
   grunt.registerTask('default', ['dist', 'dev']);
 

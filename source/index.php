@@ -48,8 +48,7 @@
 
 	<link href="assets/css/styles.css" rel="stylesheet">
 
-	<!--[if lt IE 8]>
-	<script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script> <![endif]-->
+	<!--[if lt IE 8]><script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script> <![endif]-->
 
 </head>
 
@@ -96,19 +95,23 @@
 
 </div><!-- /.container -->
 
-<!-- TODO: Compile all JS before deployment -->
-
 <!-- TODO: switch to CDN before deployment: -->
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
+<!-- build:js assets/js/vendor/jquery-1.10.1.min.js -->
 <script src="assets/js/vendor/jquery-1.10.1.js"></script>
+<!-- endbuild -->
 <script>window.jQuery || document.write("<script src='assets/js/vendor/jquery-1.10.1.min.js'>\x3C/script>")</script>
 
-<!-- build:js assets/js/vendor/bootstrap.js -->
+<!-- Use build/endbuild tags to compile groups of js files into one minified file... -->
+
+<!-- build:js assets/js/vendor/bootstrap.min.js -->
 <script src="assets/js/vendor/bootstrap/alert.js"></script>
 <script src="assets/js/vendor/bootstrap/button.js"></script>
 <!-- endbuild -->
 
+<!-- build:js assets/js/script.min.js -->
 <script src="assets/js/script.js"></script>
+<!-- endbuild -->
 
 <!-- Asynchronous google analytics; this is the official snippet.
 	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
