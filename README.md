@@ -71,9 +71,3 @@ lesshat
 index
 =====
 
-
-Note: Bootstrap javascript components are commented out at the bottom of the index.html and index.php:
-
-```
-<!-- <script src="assets/js/vendor/bootstrap.js"></script> -->
-```
