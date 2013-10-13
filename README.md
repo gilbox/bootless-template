@@ -7,17 +7,13 @@ My LESS-based HTML5 template with some optional bootstrap stuff included.
 styles.less
 ===========
 
+All site styles get imported in styles.less. This section describes the files imported into styles.less by default...
+
+
 Bootstrap
 ---------
 
-Bootstrap is commented out at the bottom of the index.html or index.php:
-
-```
-<!-- <script src="assets/js/vendor/bootstrap.js"></script> -->
-```
-
-
-All site styles get imported in styles.less. Here are the default includes:
+Only a very minimal amount of Bootstrap gets imported to start with:
 
 ```
 @import "bootstrap/variables";
@@ -43,8 +39,8 @@ All site styles get imported in styles.less. Here are the default includes:
 @import "lesshat/lesshat";
 ```
 
-... only a very minimal amount of Bootstrap gets imported to start with. To use additional Bootstrap features,
-multiple files usually have to be imported because of all the dependencies. The import code above is copy-and-pasted
+To use additional Bootstrap features, multiple files usually have to be imported because of all the dependencies.
+The import code above is copy-and-pasted
 from the first half of bootstrap.less and then some lines are commented out.
 
 If you end up importing most of the bootstrap less files, it's probably better to load
@@ -69,4 +65,15 @@ lesshat
 
 ```
 @import "lesshat/lesshat";
+```
+
+
+index
+=====
+
+
+Note: Bootstrap javascript components are commented out at the bottom of the index.html and index.php:
+
+```
+<!-- <script src="assets/js/vendor/bootstrap.js"></script> -->
 ```

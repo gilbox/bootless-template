@@ -41,9 +41,9 @@
 	<!-- FontAwesome is a good option if you need icons in your bootstrap components,
 			but for more customization use http://icomoon.io/app/ -->
 
-	<!--<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
+	<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!--[if IE 7]>
-	<!--<link href="assets/font-awesome/css/font-awesome-ie7.min.css" rel="stylesheet">-->
+	<link href="assets/font-awesome/css/font-awesome-ie7.min.css" rel="stylesheet">
 	<![endif]-->
 
 	<link href="assets/css/styles.css" rel="stylesheet">
@@ -103,7 +103,10 @@
 <script src="assets/js/vendor/jquery-1.10.1.js"></script>
 <script>window.jQuery || document.write("<script src='assets/js/vendor/jquery-1.10.1.min.js'>\x3C/script>")</script>
 
-<script src="assets/js/vendor/bootstrap.js"></script>
+<!-- build:js assets/js/vendor/bootstrap.js -->
+<script src="assets/js/vendor/bootstrap/alert.js"></script>
+<script src="assets/js/vendor/bootstrap/button.js"></script>
+<!-- endbuild -->
 
 <script src="assets/js/script.js"></script>
 
